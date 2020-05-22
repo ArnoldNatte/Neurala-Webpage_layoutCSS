@@ -1,0 +1,200 @@
+:root {
+    --main-color:#F40057;
+    --bg-colorA: #FFFFFF;
+    --bg-colorB: #F8F6F9;
+}
+
+.c-pry {
+    background-color: var(--main-color);
+}
+
+
+.c-pry-text {
+    color: var(--main-color);
+}
+
+/* Backgrounds */
+
+.bg-secA {
+    background-color: var(--bg-colorA);
+}
+
+.bg-secB {
+    background-color: var(--bg-colorB);
+}
+
+/* Header */
+
+.logo {
+    width: 8rem;
+    height: auto;
+}
+
+/* Section 1 */
+
+.sec1_grid {
+    min-height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+
+    .sec1_grid {
+        position: relative;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10rem auto;
+        grid-template-areas: "sec1_imagen"
+        "sec1_texto";
+    }
+
+    .sec1_grid_text {
+        grid-area: sec1_texto;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .sec1_grid_img {
+        grid-area: sec1_imagen;
+        position: absolute;
+    }
+
+    .sec1_grid_img > img {
+        width: 80% !important;
+    }
+
+    .sec1_grid_img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top,white 10%, transparent 40%);
+    }
+}
+
+
+/* Section 2 */
+
+.container-block-info > div > .left-side {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-block-info > div > .right-side {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.15em;
+}
+
+/* Section 3 */
+
+.module-img-text {
+    width: 8rem;
+    height: 11rem;
+    margin: auto;
+}
+/* Section Our Brain Creates... (5) */
+.sec5_grid {
+    min-height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+
+    .sec5_grid {
+        position: relative;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10rem auto;
+        grid-template-areas: "sec5_imagen"
+        "sec5_texto";
+    }
+
+    .sec5_grid_text {
+        grid-area: sec5_texto;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .sec5_grid_img {
+        grid-area: sec5_imagen;
+        position: absolute;
+    }
+
+    .sec5_grid_img > img {
+        width: 75% !important;
+    }
+
+    .sec5_grid_img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(25deg ,white 10%, transparent 60%);
+    }
+}
+
+
+/* Section Resources 6 */
+
+.module-img-description {
+    width: 18rem;
+}
+
+.module-imagen {
+    height: 7rem;
+    width: 7rem;
+}
+
+/* Section Plans 7 */
+
+.width-card {
+    width: 253px;
+}
+
+/* Section Newsletter 9 */
+
+.sec9 {
+    height: 12rem;
+
+    background-color: var(--main-color);
+    background-image: url("/img/hojas-bg_secCorreo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sec9_form {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.sec9_text {
+    min-width: 250px;
+}
+
+.sec9_input-email {
+    min-width: 250px;
+    width: 100%;
+}
+
+.sec9_button-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 100%;
+}
+
+.sec9_button-icon {
+    width: 88%;
+    height: 88%;
+    background-color: var(--main-color);
+}
+
