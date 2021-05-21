@@ -1,5 +1,7 @@
 # Neurala-maquetacion
-Neurala Layout Responsive Design Webpage with bootstrap, css3, AOS library.
+Neurala Layout Responsive Webpage with bootstrap, css3, AOS library.
+
+Link >> https://arnoldnatte.github.io/Neurala-Webpage_layoutCSS/
 
 Original Design by: Farid Muradov. >> https://www.behance.net/feridfm
 
